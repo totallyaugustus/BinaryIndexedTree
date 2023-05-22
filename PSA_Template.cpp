@@ -5,9 +5,9 @@ using namespace std;
 #define ll long long
 
 struct PSA {
-	ll arr[MAXN + 1];
+	ll N, arr[MAXN + 1];
 	void init() {
-		for (int i = 1; i <= MAXN; i++) {
+		for (int i = 1; i <= N; i++) {
 			arr[i] += arr[i - 1];
 		}
 	}
