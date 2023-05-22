@@ -30,9 +30,6 @@ struct ST {
 			if (!(r & 1)) {
 				v += arr[r--];
 			}
-			if (l == r) {
-				break;
-			}
 		}
 		return v;
 	}
