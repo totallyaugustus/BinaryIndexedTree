@@ -5,9 +5,9 @@ using namespace std;
 #define ll long long
 
 struct BIT {
-	ll arr[MAXN + 1];
+	ll N, arr[MAXN + 1];
 	void update(int i, ll v) {
-		for (; i <= MAXN; i += (i & -i)) {
+		for (; i <= N; i += (i & -i)) {
 			arr[i] += v;
 		}
 	}
